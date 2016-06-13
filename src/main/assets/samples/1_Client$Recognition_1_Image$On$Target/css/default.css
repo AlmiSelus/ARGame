@@ -1,0 +1,190 @@
+.info {
+	font-size: large;
+	position: absolute;
+	width: 100%;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color: #BBBBBB;
+	text-align: center;
+	top: 0;
+	left: 0;
+	opacity: 0.7;
+	display: table;
+}
+
+div[data-role='page'] {
+    height: calc(100% - 60px);
+}
+
+/**
+ * Msg screen
+ */
+.inbox {
+    background-color: rgba(5, 4, 5, 0.79);
+    display: flex;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 62px);
+}
+
+#inBoxCcntent {
+    padding: 10px;
+    flex: 1;
+    overflow-y:auto;
+}
+
+.botMessage, .userMessage {
+    padding: 3%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+
+    min-width: 20%;
+    max-width: 80%;
+    /*width: 80%;*/
+    border-radius: 15px;
+    clear: both;
+}
+
+.userMessage {
+    float: right;
+    background-color: #ffeeb6;
+    border-bottom-right-radius: 0px;
+}
+
+.botMessage {
+    float: left;
+    background-color: #8ec7ff;
+    border-bottom-left-radius: 0px;
+}
+
+#messengerReplyBar {
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+#messengerReplyBar li {
+    list-style: none;
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.77);
+    font-weight: bold;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.29);
+}
+
+#messengerReplyBar li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+#mainView {
+    display: block;
+    width: 540px;
+    height: 900px;
+    /*background-color: red;*/
+}
+
+#mainButtonBar {
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#mainButtonBar li {
+    list-style: none;
+    width: 50%;
+    height: 60px;
+    color: #fff;
+    background-color: #4494ff;
+    font-weight: bold;
+
+}
+
+#messengerCaption {
+    height: 40px;
+    background-color: rgba(15, 15, 15, 1);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+#messengerCaption .settings,
+#messengerCaption .arview {
+    margin-top: 5px;
+}
+
+#mainBarInARView .arMessage {
+    float: right;
+    background: url('../assets/sms/ar_message.png') no-repeat;
+    background-size: 49px 49px;
+    width: 49px;
+    height: 49px;
+}
+
+/**
+ * Duplicated for ease of use. After each use, copy to minimizer and paste in js
+ * minimizer path: http://csscompressor.com/
+ */
+.label  {
+    text-shadow: -3px 1px 0px rgba(150, 150, 150, 0.85);
+    padding:0.5%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+
+    min-width: 20%;
+    max-width: 80%;
+    background-color: rgba(255, 255, 255, 0.7) ;
+    color: #fff;
+}
+
+.label > .top {
+    font-size: 2em;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+.label > .main {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.label .left,
+.label .right {
+    padding: 20px 0;
+}
+
+
+.label .left {
+    border-right: 2px solid white;
+    float: left;
+    width: calc(50% - 12px);
+}
+
+.label .right {
+    width: 50%;
+    float: right;
+    padding-left: 10px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/**
+ * End of labels
+ */
