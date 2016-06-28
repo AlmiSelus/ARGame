@@ -35,16 +35,12 @@ public class SampleCamActivity extends AbstractArchitectCamActivity {
 
 	@Override
 	public String getARchitectWorldPath() {
-		return getIntent().getExtras().getString(
-				MainSamplesListActivity.EXTRAS_KEY_ACTIVITY_ARCHITECT_WORLD_URL);
+		return "samples/1_Client$Recognition_1_Image$On$Target/index.html";
 	}
 
 	@Override
 	public String getActivityTitle() {
-		return (getIntent().getExtras() != null && getIntent().getExtras().get(
-				MainSamplesListActivity.EXTRAS_KEY_ACTIVITY_TITLE_STRING) != null) ? getIntent()
-				.getExtras().getString(MainSamplesListActivity.EXTRAS_KEY_ACTIVITY_TITLE_STRING)
-				: "Test-World";
+		return "Super bulgur value";
 	}
 
 	@Override
@@ -140,14 +136,12 @@ public class SampleCamActivity extends AbstractArchitectCamActivity {
 
 	@Override
 	protected boolean hasGeo() {
-		return getIntent().getExtras().getBoolean(
-				MainSamplesListActivity.EXTRAS_KEY_ACTIVITY_GEO);
+		return false;
 	}
 
 	@Override
 	protected boolean hasIR() {
-		return getIntent().getExtras().getBoolean(
-				MainSamplesListActivity.EXTRAS_KEY_ACTIVITY_IR);
+		return true;
 	}
 
 	@Override
